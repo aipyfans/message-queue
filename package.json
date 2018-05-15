@@ -1,0 +1,31 @@
+{
+  "name": "im-server",
+  "version": "1.0.0",
+  "description": "im message queue",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --use_strict dist/app.js",
+    "build-dev": "webpack --config webpack.dev.js",
+    "build-prod": "webpack --config webpack.prod.js"
+  },
+  "keywords": [
+    "im",
+    "message",
+    "queue"
+  ],
+  "author": "william",
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^3.2.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-merge": "^4.1.2"
+  }
+}
